@@ -826,104 +826,28 @@ function initMap() {
     }
 }
 
-// Gallery Slider Management
+// Gallery Auto-Display Management
 class GallerySlider {
     constructor() {
         this.currentSlide = 0;
         this.totalSlides = 0;
         this.track = null;
-        this.dots = [];
         this.autoPlayInterval = null;
-        this.isPlaying = true;
         this.init();
     }
 
     init() {
         this.track = document.querySelector('.gallery-track');
-        this.dots = document.querySelectorAll('.gallery-dot');
         this.totalSlides = document.querySelectorAll('.gallery-slide').length;
 
         if (!this.track || this.totalSlides === 0) return;
 
-        this.setupEventListeners();
         this.startAutoPlay();
-    }
-
-    setupEventListeners() {
-        // Navigation arrows
-        const prevBtn = document.querySelector('.gallery-prev');
-        const nextBtn = document.querySelector('.gallery-next');
-
-        if (prevBtn) prevBtn.addEventListener('click', () => this.prevSlide());
-        if (nextBtn) nextBtn.addEventListener('click', () => this.nextSlide());
-
-        // Dots navigation
-        this.dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => this.goToSlide(index));
-        });
-
-        // Pause on hover
-        const slider = document.querySelector('.gallery-slider');
-        if (slider) {
-            slider.addEventListener('mouseenter', () => this.pauseAutoPlay());
-            slider.addEventListener('mouseleave', () => this.startAutoPlay());
-        }
-
-        // Touch/swipe support
-        this.setupTouchEvents();
-    }
-
-    setupTouchEvents() {
-        let startX = 0;
-        let currentX = 0;
-        let isDragging = false;
-
-        this.track.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-            this.pauseAutoPlay();
-        });
-
-        this.track.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            currentX = e.touches[0].clientX;
-        });
-
-        this.track.addEventListener('touchend', () => {
-            if (!isDragging) return;
-            isDragging = false;
-
-            const diffX = startX - currentX;
-            const threshold = 50;
-
-            if (Math.abs(diffX) > threshold) {
-                if (diffX > 0) {
-                    this.nextSlide();
-                } else {
-                    this.prevSlide();
-                }
-            }
-
-            this.startAutoPlay();
-        });
-    }
-
-    goToSlide(index) {
-        this.currentSlide = index;
-        this.updateSlider();
-        this.updateDots();
     }
 
     nextSlide() {
         this.currentSlide = (this.currentSlide + 1) % this.totalSlides;
         this.updateSlider();
-        this.updateDots();
-    }
-
-    prevSlide() {
-        this.currentSlide = (this.currentSlide - 1 + this.totalSlides) % this.totalSlides;
-        this.updateSlider();
-        this.updateDots();
     }
 
     updateSlider() {
@@ -931,35 +855,10 @@ class GallerySlider {
         this.track.style.transform = `translateX(${translateX}%)`;
     }
 
-    updateDots() {
-        this.dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === this.currentSlide);
-        });
-    }
-
     startAutoPlay() {
-        if (this.isPlaying) {
-            this.autoPlayInterval = setInterval(() => {
-                this.nextSlide();
-            }, 4000); // Change slide every 4 seconds
-        }
-    }
-
-    pauseAutoPlay() {
-        if (this.autoPlayInterval) {
-            clearInterval(this.autoPlayInterval);
-            this.autoPlayInterval = null;
-        }
-    }
-
-    play() {
-        this.isPlaying = true;
-        this.startAutoPlay();
-    }
-
-    pause() {
-        this.isPlaying = false;
-        this.pauseAutoPlay();
+        this.autoPlayInterval = setInterval(() => {
+            this.nextSlide();
+        }, 3000); // Change slide every 3 seconds
     }
 }
 
