@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*.github.io https://*.githubusercontent.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https://*.googleapis.com https://*.gstatic.com https://*.github.io https://*.githubusercontent.com; script-src 'self' https://*.github.io; connect-src 'self' https://*.github.io https://*.githubusercontent.com; frame-src 'self' https://www.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <title>Thangam Cinemas - Premium Movie Experience Since 1983</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/images/header.jpeg" alt="Thangam Cinemas Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#facilities" class="nav-link">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://ticketnew.com/movies/pollachi/thangam-cinemas-a-c-4k-3d-dolby-atmos-suleeswaranpatti-pollachi-c/1037509" class="nav-link book-tickets" target="_blank" rel="noopener noreferrer">Book Tickets</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">Experience Cinema Like Never Before</p>
+            <h1 class="hero-title">Thangam Cinemas</h1>
+            <p class="hero-subtitle">Premium movie entertainment in Pollachi since 1983</p>
+            <div class="hero-features">
+                <span class="feature-tag">4K 3D</span>
+                <span class="feature-tag">Dolby Atmos</span>
+                <span class="feature-tag">AC Theater</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="tel:04259 298 222" class="btn-primary">Book Tickets Now</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+                <a href="https://maps.google.com/?q=J2V5%2BP2+Pollachi%2C+Tamil+Nadu" class="btn-location" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-map-marker-alt"></i> Find Us
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="cinema-screen">
+                <div class="screen-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Now Showing Heading -->
+    <div class="container" style="padding: 2rem 0 0 0;">
+        <h2 class="section-title" style="text-align: center; margin-bottom: 1rem;">Now Showing</h2>
+    </div>
+
+    <!-- Current Movies Slider -->
+    <section class="movies-slider" id="current-movies">
+        <div class="movies-container">
+            <!-- Movies will be loaded dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Now Showing Section -->
+    <section class="now-showing">
+        <div class="container">
+            <div class="movies-grid">
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Latest Movies</h3>
+                        <p>Check our current showtimes</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="movie-info">
+                        <h3>3D Experience</h3>
+                        <p>Immersive 3D movies</p>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Premium Shows</h3>
+                        <p>Special screenings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Thangam Cinemas</h2>
+                    <p class="about-description">
+                        Thangam Cinemas started entertaining people since 1983. Having serviced for so many years, 
+                        Thangam Cinemas has attained its pride and dignity by maintaining a clean, high-class, 
+                        hygienic, audience-oriented cinema hall.
+                    </p>
+                    <p class="about-description">
+                        By 2015, Thangam Cinemas became the FIRST screen in Pollachi to feature multiplex interior 
+                        with high acoustic soundproofing, state-of-the-art HARKNESS 2.4 GAIN SILVER SCREEN, 
+                        imported 2K projector with high lumens for ultra-bright cinema with 3D, and DOLBY 7.1 
+                        surround sound system.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>40+</h3>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100K+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Online Booking</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <i class="fas fa-tv"></i>
+                        <h3>4K Projection</h3>
+                        <p>Ultra-bright cinema with imported 2K projector</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-volume-up"></i>
+                        <h3>Dolby 7.1 Surround</h3>
+                        <p>Immersive sound experience across the entire theatre</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-snowflake"></i>
+                        <h3>Climate Controlled</h3>
+                        <p>Comfortable AC environment for all seasons</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Hygiene First</h3>
+                        <p>Cleanliness is our USP since inception</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Theatre Gallery</h2>
+            <p class="section-subtitle">Experience the luxury and ambiance of Thangam Cinemas</p>
+            <div class="gallery-slider">
+                <div class="gallery-track">
+                    <div class="gallery-slide active">
+                        <img src="assets/images/Banner (1).jpeg" alt="Theatre Interior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Theatre Interior</h3>
+                            <p>Premium seating with luxury comfort</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (2).jpeg" alt="Screen and Seating" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Screen & Seating</h3>
+                            <p>4K projection with optimal viewing angles</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (3).jpeg" alt="Premium Seating" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Premium Seating</h3>
+                            <p>Comfortable recliner seats for ultimate experience</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (4).jpeg" alt="Lobby Area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Lobby Area</h3>
+                            <p>Spacious and elegant entrance lobby</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (5).jpeg" alt="Concessions" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Concessions</h3>
+                            <p>Fresh snacks and beverages available</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (6).jpeg" alt="Theatre Exterior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Theatre Exterior</h3>
+                            <p>Modern architecture and easy accessibility</p>
+                        </div>
+                    </div>
+                    <div class="gallery-slide">
+                        <img src="assets/images/Banner (7).jpeg" alt="Cinema Experience" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Cinema Experience</h3>
+                            <p>Complete entertainment experience</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="gallery-nav gallery-prev" aria-label="Previous image">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="gallery-nav gallery-next" aria-label="Next image">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Dots Indicator -->
+                <div class="gallery-dots">
+                    <button class="gallery-dot active" data-slide="0"></button>
+                    <button class="gallery-dot" data-slide="1"></button>
+                    <button class="gallery-dot" data-slide="2"></button>
+                    <button class="gallery-dot" data-slide="3"></button>
+                    <button class="gallery-dot" data-slide="4"></button>
+                    <button class="gallery-dot" data-slide="5"></button>
+                    <button class="gallery-dot" data-slide="6"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+        <div class="container">
+            <h2 class="section-title">Our Facilities</h2>
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Ample Parking</h3>
+                    <p>100 cars and 500 two-wheelers parking space</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <h3>Direct Entry</h3>
+                    <p>Direct entry for online ticket holders</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Food & Beverage</h3>
+                    <p>We deliver snacks and food to your seats</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-restroom"></i>
+                    </div>
+                    <h3>Clean Restrooms</h3>
+                    <p>Well maintained and hygienic restroom facilities</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Extended Hours</h3>
+                    <p>Ticket counters open from 9:00 AM to 10:40 PM</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>All Cards Accepted</h3>
+                    <p>All credit and debit cards are accepted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>Thangam Cinemas<br>Valaparai Road, Pollachi<br>Tamil Nadu, India</p>
+                            <p><strong>Plus Code:</strong> J2V5+P2 Pollachi</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 - 9047076777</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Box Office Hours</h3>
+                            <p>9:00 AM to 10:40 PM<br>Daily</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.0234567890123!2d77.0!3d10.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sJ2V5%2BP2%20Pollachi%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1696118400000!5m2!1sen!2sin&q=J2V5%2BP2+Pollachi%2C+Tamil+Nadu"
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Thangam Cinemas Location - J2V5+P2 Pollachi, Tamil Nadu">
+                    </iframe>
+                    <div class="map-overlay">
+                        <div class="map-info">
+                            <h4>📍 Our Location</h4>
+                            <p><strong>Plus Code:</strong> J2V5+P2 Pollachi</p>
+                            <p><strong>Address:</strong> Valaparai Road, Pollachi, Tamil Nadu</p>
+                            <a href="https://maps.google.com/?q=J2V5%2BP2+Pollachi%2C+Tamil+Nadu" target="_blank" rel="noopener noreferrer" class="directions-btn">
+                                <i class="fas fa-directions"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Thangam Cinemas</h3>
+                    <p>Premium movie experience since 1983</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/thangamcinemaspollachi/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/TicketNew" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=thangamcinemas.ticketnew.android.ui&hl=en" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#facilities">Facilities</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="https://ticketnew.com/movies/pollachi/thangam-cinemas-a-c-4k-3d-dolby-atmos-suleeswaranpatti-pollachi-c/1037509" target="_blank" rel="noopener noreferrer">Book Tickets</a></li>
+                        <li><a href="https://www.ticketnew.com/onlinetheatre/theatre/UserLogin.aspx?returnURL=T3JkZXJTdGF0dXMuYXNweA%3d%3d-XVSjReVbjz4%3d" target="_blank" rel="noopener noreferrer">Order Status</a></li>
+                        <li><a href="#facilities">Food & Beverage</a></li>
+                        <li><a href="#facilities">Parking</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Valaparai Road, Pollachi, Tamil Nadu</p>
+                    <p><i class="fas fa-plus"></i> Plus Code: J2V5+P2</p>
+                    <p><i class="fas fa-phone"></i> +91 - 9047076777</p>
+                    <p><i class="fas fa-clock"></i> 9:00 AM - 10:40 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Thangam Cinemas. All rights reserved. | Powered by <strong>P12</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=2.0"></script>
+</body>
+</html>
