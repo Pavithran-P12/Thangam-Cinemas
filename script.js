@@ -633,7 +633,7 @@ class SmoothScroll {
 // Navigation Mobile Menu Handler
 class MobileMenu {
     constructor() {
-        this.menuToggle = document.querySelector('.menu-toggle');
+        this.menuToggle = document.querySelector('.hamburger');
         this.navMenu = document.querySelector('.nav-menu');
         this.init();
     }
